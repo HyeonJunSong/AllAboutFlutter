@@ -1,4 +1,5 @@
 import 'package:allaboutflutter/pages/widgetPage/row_col/row_col_page.dart';
+import 'package:allaboutflutter/pages/widgetPage/widget_page.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -16,10 +17,8 @@ class HomePage extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             ElevatedButton(
-                child: Text("Row&Col"),
-                onPressed: (){
-                  Get.to(RowColPage());
-                },
+              child: Text("Widgets"),
+              onPressed: (){ Get.to(() => WidgetPage()); },
             ),
           ],
         ),
